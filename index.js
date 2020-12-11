@@ -1,6 +1,6 @@
 const axios = require('axios');
 
 (async () => {
-  const t = await axios.get('https://phl.carto.com/api/v2/sql?q=SELECT+*+FROM+qualified_voter_listing_2018_prima[…]listing_2018_primary_by_ward&format=json&skipfields=cartodb_id');
+  const t = await axios.get('https://phl.carto.com/api/v2/sql?q=SELECT%20*%20FROM%20voter_turnout_primary_election_2018');
   console.log({resp: t.data});
 })()
